@@ -48,6 +48,8 @@ KMeansClustering_functions
           Purpose: finds the mean point (center) of a cluster
           Output: the center value of a cluster (aka its new centroid)
     5. kMeansClustering(k, iteration_count)
+          Parameters: k - how many clusters will be formed
+                      iteration_count - how many times the process of the algorithm will run
           Purpose: applies above functions to properly use K Means Clustering to assign clusters
           Output: the final assignments as to which groups the points belong to
     6. graphingKMeans(glucose, hemoglobin, assignment, centroids, k)
@@ -57,10 +59,17 @@ KMeansClustering_functions
                       glucose - an array of the glucose values
                       k - how many clusters you want
           Purpose: graphs the data points in their assign clusters
+          Output: None
     7. NegativesRate(classification, assignments, hemoglobin)
+          Parameters: classification - an array that has whether each person has CKD or not
+                      assignments - the classifications assigned to each point
+                      hemoglobin - an array of the hemoglobin values
           Purpose: calculates the True Negative Rate and the False Negative Rate
           Output: the true negative rate and the false negative rate
     8. PositivesRate(classification, assignments, hemoglobin)
+          Parameters: classification - an array that has whether each person has CKD or not
+                      assignments - the classifications assigned to each point
+                      hemoglobin - an array of the hemoglobin values
           Purpose: calculates the True Positive Rate and the False Positive Rate
           Output: the true positive rate and the false positive rate
 
