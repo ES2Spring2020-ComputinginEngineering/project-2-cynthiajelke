@@ -27,7 +27,7 @@ KMeansClustering_functions
     Functions:
     1. openckdfile()
           Parameters: none
-          Purpose: reads files as arrays for glucose, hemoglobin, and their classification and normalizes the values to 
+          Purpose: reads files as arrays for glucose, hemoglobin, and their classification and normalizes the values so 
           they’re on the same scale
           Output: glucose, hemoglobin, and classification arrays
     2. select(K)
