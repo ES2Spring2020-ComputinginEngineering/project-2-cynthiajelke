@@ -35,21 +35,33 @@ KMeansClustering_functions
           Purpose: chooses k number of random centroids
           Output: an array of k centroid points
     3. assign(centroids, hemoglobin, glucose)
-          sets the data points as part of clusters based on distance from centroids
+          Parameters: centroids - an array of centroids fo the clusters
+                      hemoglobin - an array of the hemoglobin values
+                      glucose - an array of the glucose values
+          Purpose: sets the data points as part of clusters based on distance from centroids
           Output: an array of assigned classifications based on the centroid points
     4. findClusterMean(assignments, hemoglobin, glucose, clusternum) 
+          Parameters: assignments - the classifications assigned to each point
+                      hemoglobin - an array of the hemoglobin values
+                      glucose - an array of the glucose values
+                      clusternum - which cluster we are looking at (a value 0 through k-1)
           Purpose: finds the mean point (center) of a cluster
           Output: the center value of a cluster (aka its new centroid)
     5. kMeansClustering(k, iteration_count)
           Purpose: applies above functions to properly use K Means Clustering to assign clusters
           Output: the final assignments as to which groups the points belong to
     6. graphingKMeans(glucose, hemoglobin, assignment, centroids, k)
-          graphs the data points in their assign clusters
+          Parameters: assignment - the classifications assigned to each point
+                      centroids - an array of centroids fo the clusters
+                      hemoglobin - an array of the hemoglobin values
+                      glucose - an array of the glucose values
+                      k - how many clusters you want
+          Purpose: graphs the data points in their assign clusters
     7. NegativesRate(classification, assignments, hemoglobin)
-          Calculates the True Negative Rate and the False Negative Rate
+          Purpose: calculates the True Negative Rate and the False Negative Rate
           Output: the true negative rate and the false negative rate
     8. PositivesRate(classification, assignments, hemoglobin)
-          Calculates the True Positive Rate and the False Positive Rate
+          Purpose: calculates the True Positive Rate and the False Positive Rate
           Output: the true positive rate and the false positive rate
 
   
