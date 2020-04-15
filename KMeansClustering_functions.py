@@ -92,6 +92,8 @@ def kMeansClustering(k, iteration_count):
             centroids[i] = new_centroid
         #increments j
         j += 1
+    print("The final centroids are at:")
+    print(centroids)
     return assignments
 
 #graphs the data points in their assign clusters
@@ -101,7 +103,7 @@ def graphingKMeans(glucose, hemoglobin, assignment, centroids, k):
         rcolor = np.random.rand(4,)
         plt.plot(hemoglobin[assignment==i],glucose[assignment==i], ".", label = "Class " + str(i), color = rcolor)
         #display the original centroid location
-        if(k == 2):
+        if(k <= 5):
             plt.plot(centroids[i, 0], centroids[i, 1], "D", label = "Centroid " + str(i), color = rcolor)
     plt.xlabel("Hemoglobin")
     plt.ylabel("Glucose")

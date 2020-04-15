@@ -10,7 +10,7 @@ glucose, hemoglobin, classification = kmc.openckdfile()
 
 
 #change this value for how many clusters you want
-k =3
+k = 3
 
 #assign k random starting centroids
 centroids = kmc.select(k)
@@ -18,12 +18,12 @@ centroids = kmc.select(k)
 #runs the algorithm to assign data points to clusters
 assignments = kmc.kMeansClustering(k, 10000)
 
-#prints the original centroid locations
-print("The centroids are at:")
-print(centroids)
-
 #graphs the clusters
 kmc.graphingKMeans(glucose, hemoglobin, assignments, centroids, k)
+
+#prints the original centroid locations
+print("The centroids are originally at:")
+print(centroids)
 
 #prins the true and false Negatives/Posatives rate
 print("The True Negatives and False Negatives Rates are:")
